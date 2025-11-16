@@ -2,9 +2,10 @@
 This contains complex environment code.
 
 
-🚀数据类型（.h5）
+🚀数据类型（.h5）有两个键hsi_R和mos  
 
-hsi_Hazy | shape=(4, 61, 1024, 1224) | dtype=float32
+hsi_R | shape=(4, 61, 1024, 1224) | dtype=float32
+
 mos | shape=(4, 1024, 1224) | dtype=float32
 
 通过网盘分享的文件：dataset
