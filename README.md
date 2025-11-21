@@ -20,6 +20,6 @@ mos | shape=(4, 1024, 1224) | dtype=float32
 	
         with open('model_structure.txt', 'w', encoding='utf-8') as f:
 				for name, layer in model.named_children():
-            f.write(f"{name}: {layer}\n")
-            f.write("*" * 50 + "\n")  # 分隔线
+		            f.write(f"{name}: {layer}\n")
+		            f.write("*" * 50 + "\n")  # 分隔线
 
