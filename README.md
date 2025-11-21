@@ -18,8 +18,15 @@ mos | shape=(4, 1024, 1224) | dtype=float32
 在model里面利用以下代码 即可很好查看网络结构
 
 	
-        with open('model_structure.txt', 'w', encoding='utf-8') as f:
-				for name, layer in model.named_children():
-		            f.write(f"{name}: {layer}\n")
-		            f.write("*" * 50 + "\n")  # 分隔线
+    with open('model_structure.txt', 'w', encoding='utf-8') as f:
+        for name, layer in model.named_children():
+            f.write(f"{name}: {layer}\n")
+            f.write("*" * 50 + "\n")  # 分隔线
 
+
+在model里面利用以下代码 即可很好查看网络参数
+
+    with open('model_params.txt', 'w', encoding='utf-8') as f:
+        for name, layer in model.state_dict().items():
+            f.write(f"{name}: {layer.shape}\n")
+            f.write("*" * 50 + "\n")  # 分隔线
