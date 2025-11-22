@@ -33,5 +33,6 @@ mos | shape=(4, 1024, 1224) | dtype=float32
 
 
 更加清晰
-	from torchinfo import summary
-	summary(model,input_size=(batch_size，244，100，100))
+			
+			from torchinfo import summary
+			summary(model,input_size=(batch_size，244，100，100))
