@@ -30,3 +30,7 @@ mos | shape=(4, 1024, 1224) | dtype=float32
         for name, layer in model.state_dict().items():
             f.write(f"{name}: {layer.shape}\n")
             f.write("*" * 50 + "\n")  # 分隔线
+
+
+from torchinfo import summary
+summary(model,input_size=(batch_size，244，100，100))
