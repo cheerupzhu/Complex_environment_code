@@ -32,5 +32,6 @@ mos | shape=(4, 1024, 1224) | dtype=float32
             f.write("*" * 50 + "\n")  # 分隔线
 
 
-from torchinfo import summary
-summary(model,input_size=(batch_size，244，100，100))
+更加清晰
+	from torchinfo import summary
+	summary(model,input_size=(batch_size，244，100，100))
